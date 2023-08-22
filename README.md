@@ -1,66 +1,43 @@
 # METACRAFTERS
 
-## Smart Contract Integration with Frontend
-This project demonstrates the integration of a smart contract with a frontend application using Ethereum, React, and Hardhat.
+This project showcases the integration of a smart contract with a frontend application using Ethereum, React, and Hardhat.
 
-## Smart Contract
-The smart contract used in this project is Assessment.sol. It is a simple contract that allows you to set and fetch a naming message.
+# Smart Contract:
+The employed smart contract, named Assessment.sol, is a simple one designed to facilitate setting and retrieving a naming message.
 
-## Frontend
-The frontend application is built using React and interacts with the deployed smart contract. 
-The main functionality of the frontend includes fetching the current naming and setting a new naming message.
+# Frontend:
+The frontend is constructed using React and interacts seamlessly with the deployed smart contract. The key frontend functionalities encompass fetching the current naming message and configuring a new one.
 
-## Prerequisites
+# Prerequisites:
+
 Node.js
+MetaMask browser extension
+# Getting Started:
 
-MetaMask extension for your browser
+Clone the repository: Use the command git clone to clone the repository.
+Install dependencies: Navigate to the project directory and run npm install.
+Initiate a local Ethereum network: Execute npx hardhat node to start a local Ethereum network using Hardhat. Remember the network URL for the MetaMask setup.
+Configure MetaMask:
+Install MetaMask and create an Ethereum network, setting the URL to the local Hardhat network.
+Import an account from the local Hardhat network to MetaMask.
+Deploy the Smart Contract: Deploy the Assessment smart contract on the local network by running npx hardhat run scripts/deploy.js --network localhost. Ensure the local Ethereum network is active before deployment.
+Update Frontend Configuration: In the index.js file, update the nameAddress variable with the deployed contract address acquired from the deployment step.
 
-## Getting Started
-Clone the repository:
-**git clone**
+# Starting the Frontend Development Server:
+Run npm run dev to initiate the frontend development server. Access the application in your browser at http://localhost:3000.
 
-### Install the dependencies:
-**cd npm install**
+# Usage:
+The main page of the front end displays the existing naming message from the smart contract. To update the naming, input a new message and click "Set naming". Ensure your MetaMask account linked to the local Ethereum network contains sufficient funds. The revised naming will be stored on the blockchain, and the page will exhibit the updated message.
 
-### Start a local Ethereum network:
-**npx hardhat node**
+# Resources:
 
-This command starts a local Ethereum network using Hardhat. Make sure to note the network URL and use it to configure MetaMask in the next step.
+Ethereum
+React
+Hardhat
+MetaMask
 
-### Configure MetaMask:
-1. Install the MetaMask extension for your browser. Create an Ethereum network in MetaMask and set the network URL to connect to your local Hardhat network. 
-2. Import an account from your local Hardhat network into MetaMask. .
-3. Deploy the Smart Contract:
+# Author:
+Vishnu Vishvas Sharma
 
-To deploy the Assessment smart contract to your local network, run the following command in your project directory:
-
-**npx hardhat run scripts/deploy.js --network localhost**
-
-Make sure the local Ethereum network is running before deploying the contract.
-
-### Update the Frontend Configuration:
-In the index.js file, update the nameAddress variable with the deployed contract address obtained from the deployment step.
-
-#Start the Frontend Development Server:
-
-**npm run dev**
-
-Open your browser and navigate to http://localhost:3000 to access the frontend application.
-
-## Usage
-The main page of the frontend application displays the current naming fetched from the smart contract.
-To update the naming, enter a new message in the input field and click the "Set naming" button. Make sure to have funds in the MetaMask account connected to the local Ethereum network.
-The updated naming will be stored on the blockchain, and the page will display the new naming.
-
-## Resources
-1. Ethereum
-2. React
-3. Hardhat
-4. MetaMask
-
-## Authors
-ex. Mayank Varshney (21BCS7009)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/21BCS7009/Module-Smart-Contract-Management---ETH-AVAX/blob/main/LICENSE) file for details.
+# License:
+This project holds an MIT License.
